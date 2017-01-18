@@ -92,8 +92,14 @@ p {font-size: 16px;}
 }
 .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
+
+.container-fluid.navbar-page {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -126,6 +132,7 @@ p {font-size: 16px;}
 }
 
 .nav li{
+    border-top: 2px solid white;
     padding: 10px;
 }
 
@@ -160,17 +167,22 @@ p {font-size: 16px;}
     width: 80%;
 }
 
+.help{
+    margin-top: 30px;
+}
+
 .ancho-80 h2.title {
 	font-weight: bold;
 }
 
 .seccion-nuestro-servicio{
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .seccion-nuestro-servicio .title{
-    height: 80px;
-	font-weight: bold;
+    height: 60px;
+    font-weight: bold;
     position: relative;
 }
 
@@ -187,15 +199,21 @@ p {font-size: 16px;}
 
 .seccion-nuestro-servicio .body{
     margin-top: 40px;
-    height: 100px;
+    height: 80px;
     text-align: justify;
     line-height: 20px;
 }
 
 .seccion-nuestro-servicio .footer{
-    height: 80px;
+    height: 60px;
     color: #FE878C;
     font-weight: bold;
+}
+
+.razon-seccion .title{
+   font-size: 18px;
+   font-weight: bolder;
+   margin-bottom: 20px;
 }
 
 .tachado{
@@ -225,6 +243,11 @@ p {font-size: 16px;}
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.texto-solicita{
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .redes-sociales li{
@@ -278,6 +301,7 @@ p {font-size: 16px;}
 .btn-blanco.outline {
     border: 2px solid white;
     color: #fda2a5;
+    text-transform: uppercase;
 }
 .btn-blanco.outline:hover, .btn-blanco.outline:focus, .btn-blanco.outline:active, .btn-blanco.outline.active, .open > .dropdown-toggle.btn-blanco {
     color: #fda2a5;
@@ -314,6 +338,11 @@ p {font-size: 16px;}
 		text-align: center;
 		padding: 0px 60px 60px 60px;
 	}
+        .seccion-nuestro-servicio:last-child{
+		text-align: center;
+		padding: 0px 60px 0px 60px;
+                margin-bottom: 0px;
+	}
 	.seccion-nuestro-servicio .title{
 		min-height: 40px;
 	}
@@ -332,6 +361,25 @@ p {font-size: 16px;}
 	}
 	.razon-seccion{
 		padding: 0px 10% 10% 10%; 
+                 
 	}
+        .razon-seccion .body img{
+            margin-top: 10px;
+        }
+}
+
+@media screen and (max-width: 434px) {
+    .seccion-nuestro-servicio{
+        text-align: center;
+        padding: 0px 30px 60px 30px;
+    }
+    .seccion-nuestro-servicio:last-child{
+        text-align: center;
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 0px;
+    }
+    .image-nuevoservicio{
+        margin-top: 20px;
+    }
 }
 

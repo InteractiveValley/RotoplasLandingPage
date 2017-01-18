@@ -90,7 +90,13 @@ p {font-size: 16px;}
 }
 .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    
+    padding-bottom: 50px;
+}
+
+.container-fluid.navbar-page {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .navbar {
     padding-top: 0px;
@@ -176,12 +182,17 @@ p {font-size: 16px;}
     width: 80%;
 }
 
+.help{
+    margin-top: 30px;
+}
+
 .seccion-nuestro-servicio{
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .seccion-nuestro-servicio .title{
-    height: 80px;
+    height: 60px;
     font-weight: bold;
     position: relative;
 }
@@ -199,15 +210,21 @@ p {font-size: 16px;}
 
 .seccion-nuestro-servicio .body{
     margin-top: 40px;
-    height: 100px;
+    height: 80px;
     text-align: justify;
     line-height: 20px;
 }
 
 .seccion-nuestro-servicio .footer{
-    height: 80px;
+    height: 60px;
     color: #158FDD;
     font-weight: bold;
+}
+
+.razon-seccion .title{
+   font-size: 18px;
+   font-weight: bolder;
+   margin-bottom: 20px;
 }
 
 .tachado{
@@ -257,6 +274,11 @@ p {font-size: 16px;}
     transition:all 0.5s ease;
 }
 
+.texto-solicita{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
 .fondo-blanco {
     background-color: white;
     border-radius: 25px;
@@ -275,16 +297,19 @@ p {font-size: 16px;}
 .btn-blanco {
     border: 2px solid white;
     color: #158FDD;
+    text-transform: uppercase;
 }
 .btn-blanco:hover, .btn-blanco:focus, .btn-blanco:active, .btn-blanco.active, .open > .dropdown-toggle.btn-blanco {
     color: #158FDD;
     border-color: white;
     background: white;
+    padding: 12px 22px;
 }
 .btn-blanco:active, .btn-blanco.active {
     border-color: white;
     color: #158FDD;
     box-shadow: none;
+    padding: 12px 22px;
 }
 
 .texto-slider h2{
@@ -311,6 +336,11 @@ p {font-size: 16px;}
 		text-align: center;
 		padding: 0px 60px 60px 60px;
 	}
+        .seccion-nuestro-servicio:last-child{
+		text-align: center;
+		padding: 0px 60px 0px 60px;
+                margin-bottom: 0px;
+	}
 	.seccion-nuestro-servicio .title{
 		min-height: 40px;
 	}
@@ -329,7 +359,24 @@ p {font-size: 16px;}
 	}
 	.razon-seccion{
 		padding: 0px 10% 10% 10%; 
+	         
 	}
+        .razon-seccion .body img{
+            margin-top: 10px;
+        }
 }
 
-
+@media screen and (max-width: 434px) {
+    .seccion-nuestro-servicio{
+        text-align: center;
+        padding: 0px 30px 60px 30px;
+    }
+    .seccion-nuestro-servicio:last-child{
+        text-align: center;
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 0px;
+    }
+    .image-nuevoservicio{
+        margin-top: 20px;
+    }
+}
