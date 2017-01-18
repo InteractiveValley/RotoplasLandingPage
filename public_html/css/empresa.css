@@ -44,7 +44,12 @@ body {
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
-.bg-1 { 
+
+.container-fluid.bg-1{
+	padding: 0;
+}
+
+.bg-11 { 
     background-color: #F4F4F4; /* Green */
     color: #ffffff;
     position: relative;
@@ -74,6 +79,11 @@ p {font-size: 16px;}
     background-color: #ffffff; /* White */
     color: #000000;
 }
+
+.bg-3 h2.title{
+	font-weight: bolder;
+}
+
 .bg-4 { 
     background-image: url('../img/empresa/background_contact.png');
     background-repeat: no-repeat;
@@ -172,6 +182,7 @@ p {font-size: 16px;}
 
 .seccion-nuestro-servicio .title{
     height: 80px;
+    font-weight: bold;
     position: relative;
 }
 
@@ -278,6 +289,47 @@ p {font-size: 16px;}
 
 .texto-slider h2{
     font-size: 34px;
+}
+
+@media screen and (max-width: 960px) {
+    .ancho-80{
+		width: 100%;
+	}
+	.ancho-80 h2.title{
+		text-align: center;
+	}
+	.container-fluid {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.seccion-nuestro-servicio{
+		text-align: center;
+		padding: 0px 60px 60px 60px;
+	}
+	.seccion-nuestro-servicio .title{
+		min-height: 40px;
+	}
+
+	.seccion-nuestro-servicio .title:after{
+		width: 100%;
+	}
+
+	.seccion-nuestro-servicio .body{
+		margin-top: 20px;
+		min-height: 50px;
+	}
+
+	.seccion-nuestro-servicio .footer{
+		min-height: 40px;
+	}
+	.razon-seccion{
+		padding: 0px 10% 10% 10%; 
+	}
 }
 
 
